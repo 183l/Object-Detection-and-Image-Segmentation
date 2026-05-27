@@ -114,7 +114,13 @@ data
 *.pkl.json
 *.log.json
 work_dirs/
+checkpoints/
 mmseg/.mim
+.specstory/
+demo/result.jpg
+demo/=*
+*-Copy*.py
+tools/1.py
 
 # Pytorch
 *.pth

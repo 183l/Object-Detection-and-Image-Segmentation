@@ -35,12 +35,13 @@ from .setr_up_head import SETRUPHead
 from .stdc_head import STDCHead
 from .uper_head import UPerHead
 from .vpd_depth_head import VPDDepthHead
+from .evidential_head import EvidentialHead
 
 __all__ = [
     'FCNHead', 'PSPHead', 'ASPPHead', 'PSAHead', 'NLHead', 'GCHead', 'CCHead',
     'UPerHead', 'DepthwiseSeparableASPPHead', 'ANNHead', 'DAHead', 'OCRHead',
     'EncHead', 'DepthwiseSeparableFCNHead', 'FPNHead', 'EMAHead', 'DNLHead',
-    'PointHead', 'APCHead', 'DMHead', 'LRASPPHead', 'SETRUPHead',
+    'PointHead', 'APCHead', 'DMHead', 'LRASPPHead', 'SETRUPHead','EvidentialHead',
     'SETRMLAHead', 'DPTHead', 'SETRMLAHead', 'SegmenterMaskTransformerHead',
     'SegformerHead', 'ISAHead', 'STDCHead', 'IterativeDecodeHead',
     'KernelUpdateHead', 'KernelUpdator', 'MaskFormerHead', 'Mask2FormerHead',
