@@ -1,0 +1,58 @@
+{
+  "experiment": "Baseline vs EDL Small-Sample Comparison v2",
+  "dataset": {
+    "train_size": 300,
+    "test_size": 500,
+    "ood_size": 100,
+    "num_classes": 3,
+    "class_names": [
+      "Background",
+      "Normal Reflector",
+      "Missing/Damaged"
+    ],
+    "class_distribution_test": [
+      275,
+      150,
+      75
+    ],
+    "noise_level": 1.2
+  },
+  "baseline": {
+    "mIoU": 0.5634282124112227,
+    "NLL": 0.7008975744247437,
+    "Brier": 0.362423837184906,
+    "ECE": 0.0954207614064217,
+    "entropy": 0.3542174696922302
+  },
+  "edl": {
+    "mIoU": 0.597312237610745,
+    "NLL": 0.5997810959815979,
+    "Brier": 0.3326505124568939,
+    "ECE": 0.04635265457630158,
+    "entropy": 0.6501832008361816
+  },
+  "improvements": {
+    "mIoU_delta": 0.03388402519952238,
+    "NLL_delta": -0.10111647844314575,
+    "Brier_delta": -0.029773324728012085,
+    "ECE_delta": -0.04906810683012011
+  },
+  "ood_analysis": {
+    "baseline_ood_confidence_mean": 0.9012922644615173,
+    "edl_ood_uncertainty_mean": 0.25587037205696106,
+    "edl_id_uncertainty_mean": 0.2923962473869324,
+    "ood_id_uncertainty_ratio": 0.8750808835029602
+  },
+  "class_wise_ece": {
+    "baseline": {
+      "Background": 0.12190100481564349,
+      "Normal Reflector": 0.11659232844909033,
+      "Missing/Damaged": 0.18175812373558684
+    },
+    "edl": {
+      "Background": 0.1887173760750077,
+      "Normal Reflector": 0.18440847992897036,
+      "Missing/Damaged": 0.24899956504503887
+    }
+  }
+}
